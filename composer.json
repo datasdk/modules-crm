@@ -1,0 +1,66 @@
+{
+    "name": "nwidart/crm",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../../package-manager/available",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "../../package-manager/categories",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "../../package-manager/addresses",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "../../package-manager/tools",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "require": {
+        "datasdk/available": "^1.0",
+        "datasdk/categories": "^1.0",
+        "datasdk/addresses": "^1.0",
+        "datasdk/tools": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Crm\\": "",
+            "Modules\\Crm\\Database\\Factories\\": "database/factories/",
+            "Modules\\Crm\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Crm\\Tests\\": "tests/"
+        }
+    }
+}
